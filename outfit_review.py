@@ -15,4 +15,4 @@ def review_outfit(worn_clothes, weather):
         elif weather == 'cloudy':
             suggestion = "Next time, a sweater or light jacket would be perfect for cloudy weather."
 
-        return f"😢 The outfit might not have been suitable for the weather. {suggestion}"
+        return f"😢 The outfit might not have been suitable for the weather. \n{suggestion}"
