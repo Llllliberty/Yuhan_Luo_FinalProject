@@ -1,2 +1,5 @@
 Worn Clothes: T-shirt and shorts, Weather: sunny
 Worn Clothes: Raincoat and boots, Weather: rainy
+Worn Clothes: T-shirt and shorts, Weather: sunny
+Worn Clothes: Raincoat and boots, Weather: rainy
+Worn Clothes: Dark blue sweater with black jeans, Weather: cloudy

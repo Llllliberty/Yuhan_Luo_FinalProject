@@ -31,7 +31,9 @@ def test_review_outfit():
 test_review_outfit()
 
 # Testing file operations from file_operations.py
-from file_operations import save_outfit_recommendation, save_outfit_history, read_outfit_recommendations, read_outfit_history  # Ensure correct import
+from file_operations import (save_outfit_recommendation, save_outfit_history, 
+                           save_user_choice, read_outfit_recommendations, 
+                           read_outfit_history, read_user_choice_history)  # Import all necessary functions
 
 def test_file_operations():
     print("\nTesting file operations:")
@@ -39,9 +41,64 @@ def test_file_operations():
     # Test saving outfit recommendations to file
     save_outfit_recommendation("sunny", "casual", "T-shirt and shorts")
     save_outfit_recommendation("rainy", "interview", "Formal shirt, pants, and umbrella")
+    print("Saved outfit recommendations.")
 
     # Test saving user outfit history to file
     save_outfit_history("T-shirt and shorts", "sunny")
     save_outfit_history("Raincoat and boots", "rainy")
+    print("Saved user outfit history.")
     
-    # Test reading outfit recommendations history
+    # Test saving user choice history to file (NEW)
+    save_user_choice("sunny", "casual", "T-shirt and shorts", "Blue T-shirt and khaki shorts")
+    save_user_choice("rainy", "interview", "Formal shirt, pants, and umbrella", "Navy suit with umbrella")
+    print("Saved user choice history.")
+    
+    # Test reading all files
+    print("\nReading saved records:")
+    read_outfit_recommendations()
+    read_user_choice_history()  # NEW
+    read_outfit_history()
+
+test_file_operations()
+
+# Test the complete workflow
+def test_complete_workflow():
+    print("\nTesting complete workflow:")
+    
+    # Simulate pre-departure recommendation workflow
+    weather = "cloudy"
+    occasion = "date"
+    print(f"Weather: {weather}, Occasion: {occasion}")
+    
+    # Get recommendation
+    recommendation = recommend_outfit(weather, occasion)
+    print(f"Recommended outfit: {recommendation}")
+    
+    # Save recommendation
+    save_outfit_recommendation(weather, occasion, recommendation)
+    
+    # Simulate user choice
+    user_choice = "Dark blue sweater with black jeans"
+    print(f"User chose: {user_choice}")
+    
+    # Save user choice
+    save_user_choice(weather, occasion, recommendation, user_choice)
+    
+    # Later, simulate post-event review
+    worn_clothes = user_choice  # In real scenario, user might enter different clothes
+    print(f"User wore: {worn_clothes}")
+    
+    # Get feedback
+    feedback = review_outfit(worn_clothes, weather)
+    print(f"Feedback: {feedback}")
+    
+    # Save outfit history
+    save_outfit_history(worn_clothes, weather)
+    
+    # Read all histories
+    print("\nFinal histories:")
+    read_outfit_recommendations()
+    read_user_choice_history()
+    read_outfit_history()
+
+test_complete_workflow()

@@ -1,0 +1,3 @@
+Weather: sunny, Occasion: casual, Recommended: T-shirt and shorts, User Choice: Blue T-shirt and khaki shorts
+Weather: rainy, Occasion: interview, Recommended: Formal shirt, pants, and umbrella, User Choice: Navy suit with umbrella
+Weather: cloudy, Occasion: date, Recommended: Smart-casual outfit, User Choice: Dark blue sweater with black jeans

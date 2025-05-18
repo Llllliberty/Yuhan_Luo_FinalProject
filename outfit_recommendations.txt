@@ -1,2 +1,5 @@
 Weather: sunny, Occasion: casual, Recommendation: T-shirt and shorts
 Weather: rainy, Occasion: interview, Recommendation: Formal shirt, pants, and umbrella
+Weather: sunny, Occasion: casual, Recommendation: T-shirt and shorts
+Weather: rainy, Occasion: interview, Recommendation: Formal shirt, pants, and umbrella
+Weather: cloudy, Occasion: date, Recommendation: Smart-casual outfit

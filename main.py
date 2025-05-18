@@ -1,6 +1,6 @@
 from outfit_recommendation import recommend_outfit  # Import the function to recommend outfits
 from outfit_review import review_outfit  # Import the function to review the outfit after the event
-from file_operations import save_outfit_recommendation, save_outfit_history, read_outfit_recommendations, read_outfit_history  # Import file handling functions
+from file_operations import save_outfit_recommendation, save_outfit_history, save_user_choice, read_outfit_recommendations, read_outfit_history, read_user_choice_history  # Import file handling functions
 
 def main():
     print("Welcome to the Weather & Occasion Outfit Assistant!")  # Print welcome message
@@ -17,6 +17,13 @@ def main():
         
         # Save the recommendation to file
         save_outfit_recommendation(weather, occasion, recommendation)
+        
+        # NEW: Ask user what they actually chose to wear
+        user_choice = input("What did you decide to wear? (Press Enter to skip): ")
+        
+        if user_choice:  # Only save if user provided a choice
+            save_user_choice(weather, occasion, recommendation, user_choice)
+            print("Your choice has been saved!")
 
     elif mode == '2':
         # Post-event review mode
@@ -30,8 +37,8 @@ def main():
 
     # Read historical recommendations and outfit history
     read_outfit_recommendations()  # Read and display outfit recommendations history
+    read_user_choice_history()  # NEW: Read and display user choice history
     read_outfit_history()  # Read and display user outfit history
 
 if __name__ == "__main__":
     main()  # Execute the main program
-
