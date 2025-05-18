@@ -3,3 +3,13 @@ Weather: rainy, Occasion: interview, Recommendation: Formal shirt, pants, and um
 Weather: sunny, Occasion: casual, Recommendation: T-shirt and shorts
 Weather: rainy, Occasion: interview, Recommendation: Formal shirt, pants, and umbrella
 Weather: cloudy, Occasion: date, Recommendation: Smart-casual outfit
+Weather: sunny, Occasion: casual, Recommendation: T-shirt and shorts
+Weather: rainy, Occasion: interview, Recommendation: Formal shirt, pants, and umbrella
+Weather: cloudy, Occasion: date, Recommendation: Smart-casual outfit
+Weather: snowy, Occasion: casual, Recommendation: Thick sweater, warm pants, and boots
+Weather: sunny, Occasion: holiday, Recommendation: Comfortable dress or light shirt and shorts
+Weather: rainy, Occasion: holiday, Recommendation: Waterproof jacket and boots
+Weather: snowy, Occasion: interview, Recommendation: Wool coat, dress pants, and scarf
+Weather: cloudy, Occasion: holiday, Recommendation: Casual jacket and jeans
+Weather: sunny, Occasion: party, Recommendation: Stylish dress or shirt and jeans
+Weather: snowy, Occasion: party, Recommendation: Elegant sweater and warm pants
